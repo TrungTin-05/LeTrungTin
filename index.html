@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hồ sơ cá nhân - Lê Nguyễn Trung Tín</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Toggle dark mode -->
+    <div class="toggle-wrapper">
+      <button id="toggleMode">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Hồ sơ -->
+    <div class="profile-card">
+      <img class="avatar" src="images/avatar.jpg" alt="Avatar">
+      <h2>Lê Nguyễn Trung Tín</h2>
+      <p>Developer & Designer</p>
+      <div class="stats">
+        <div><strong>Following</strong><br>120</div>
+        <div><strong>Followers</strong><br>5000</div>
+        <div><strong>Posts</strong><br>209</div>
+      </div>
+      <div class="buttons">
+        <button class="message">Message</button>
+        <button class="follow">Follow Me</button>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <h3 class="section-title">Thông tin cá nhân</h3>
+    <div class="tab-menu">
+      <button class="tab-link active" data-tab="intro">Giới thiệu</button>
+      <button class="tab-link" data-tab="goal">Mục tiêu</button>
+      <button class="tab-link" data-tab="skills">Kỹ năng</button>
+      <button class="tab-link" data-tab="projects">Dự án</button>
+      <button class="tab-link" data-tab="contact">Liên hệ</button>
+    </div>
+
+    <div class="tab-content active" id="intro">
+      <p>Tôi là một sinh viên công nghệ thông tin đam mê lập trình và thiết kế web, với tinh thần học hỏi và luôn cập nhật công nghệ mới.</p>
+    </div>
+
+    <div class="tab-content" id="goal">
+      <p>Trở thành một fullstack developer chuyên nghiệp, tham gia phát triển các sản phẩm mang lại giá trị cho cộng đồng.</p>
+    </div>
+
+    <div class="tab-content" id="skills">
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Node.js</li>
+        <li>UI/UX Design (Figma)</li>
+        <li>MySQL, MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="projects">
+      <ul>
+        <li><strong>Website học toán tiểu học</strong> – HTML/CSS/JS + Firebase</li>
+        <li><strong>Portfolio cá nhân</strong> – Responsive Design + GitHub Pages</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="contact">
+      <ul>
+        <li>📧 Email: trungtin@example.com</li>
+        <li>💼 GitHub: <a href="https://github.com/ttin14" target="_blank">ttin14</a></li>
+        <li>🔗 LinkedIn: <a href="#">linkedin.com/in/trungtin</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
