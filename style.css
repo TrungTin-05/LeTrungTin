@@ -1,0 +1,138 @@
+:root {
+  --bg: #f0f8ff;
+  --text: #222;
+  --card-bg: white;
+  --accent: #48c6ef;
+}
+
+body.dark {
+  --bg: #1e1e2f;
+  --text: #eee;
+  --card-bg: #2a2a40;
+  --accent: #00d1ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.toggle-wrapper {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+#toggleMode {
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.profile-card {
+  background: var(--card-bg);
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.message {
+  background: linear-gradient(to right, #f7a1c4, #48c6ef);
+}
+
+.follow {
+  background: linear-gradient(to right, #fcb1e0, #48c6ef);
+}
+
+/* Tabs */
+.tab-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+
+.tab-link {
+  background: transparent;
+  border: 2px solid var(--accent);
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-link.active {
+  background: var(--accent);
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
